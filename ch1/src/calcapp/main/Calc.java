@@ -1,13 +1,11 @@
-package Calcapp.main;
+package calcapp.main;
 //Calcをcalcapp.mainに所属させる
-public class Calc{
+public class Calc {	
 	public static void main(String[] args) {
 		int a = 10; int b = 2;
-		int total = calcapp.logics.CaliLogic.tasu(a,b);
-		int delta = calcapp.logics.CaliLogic.tasu(a,b);
+		int total = calcapp.logics.Calclogic.tasu(a,b);
+		int delta = calcapp.logics.Calclogic.hiku(a,b);
 		System.out.println("足すと" + total + "引くと" + delta);
-		
-		
 	}
 
 }
