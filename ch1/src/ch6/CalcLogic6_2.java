@@ -1,6 +1,6 @@
 package ch6;
 //CalcLogic.javaに計算処理を入れる
-public class CalcLogic {
+public class CalcLogic6_2{
 	public static int tasu(int a, int b) {
 		return(a + b);
 	}
