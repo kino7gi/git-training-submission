@@ -1,8 +1,8 @@
 package hero.main;
 
 public class Hero {
-		String name;//名前の宣言
-		  int hp;//HPの宣言
+		public String name;//名前の宣言
+		  public int hp;//HPの宣言
 		  
 		  public void sleep() {
 			  this.hp = 100;
