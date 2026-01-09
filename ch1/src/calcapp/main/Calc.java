@@ -1,5 +1,5 @@
 package calcapp.main;
-
+//6章の見本全て記入
 public class Calc {
 
 	public static void main(String[] args) {
