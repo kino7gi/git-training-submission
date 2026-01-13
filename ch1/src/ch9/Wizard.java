@@ -1,6 +1,8 @@
 package ch9;
 
-public class Wizard {
+import ch12.Life;
+
+public class Wizard implements Life {
 	String name;
 	int hp;
 	public void heal(Hero h) {

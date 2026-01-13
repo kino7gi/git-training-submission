@@ -1,5 +1,7 @@
 package ch11;
 
-public class Creature {
+public interface class Creature {
+	//public abstractは省略できる
+	public abstract void run();
 
 }
