@@ -1,6 +1,6 @@
 package hero.main;
 
-//「神様のクラス」を作る
+//「神様のクラス」を作る。8章まとめてHeroパッケージに書く
 public class Main {
 	
 	public static void main(String[] args) {

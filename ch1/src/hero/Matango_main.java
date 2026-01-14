@@ -1,5 +1,5 @@
 package hero;
-
+//仮想世界に勇者とお化けキノコ2匹を生み出す
 public class Matango_main {
 
 	public static void main(String[] args) {

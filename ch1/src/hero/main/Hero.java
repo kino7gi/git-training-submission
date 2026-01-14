@@ -1,5 +1,5 @@
 package hero.main;
-
+//８章まとめて
 public class Hero {
 		public String name;//名前の宣言
 		  public int hp;//HPの宣言

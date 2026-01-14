@@ -1,7 +1,7 @@
 package ch9;
 
 import ch12.Life;
-
+//回復魔法を使えるWizardクラス
 public class Wizard implements Life {
 	String name;
 	int hp;
