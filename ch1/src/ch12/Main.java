@@ -1,5 +1,7 @@
 package ch12;
-
+//Lifeの箱にWizardインスタンスを入れる
+//Wizardクラスを通常の方法でインスタンス化
+//MonsterとSlimeの逃げ方を調べる
 public class Main {
 //抽象クラス等はインスタンス化できないが、変数の型としては使用できる
 	public static void main(String[] args) {

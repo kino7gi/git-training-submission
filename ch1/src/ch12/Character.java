@@ -1,4 +1,5 @@
 package ch12;
+//Characterを継承して定義されたWizardクラス
 //抽象メソッド
 public abstract class Character {
 	String name;

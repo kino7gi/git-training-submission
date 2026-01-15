@@ -1,5 +1,5 @@
 package ch11;
 
-public class Matango {
+public class Matango{
 		int hp;
 }

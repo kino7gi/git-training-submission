@@ -1,5 +1,5 @@
 package ch12;
-
+//Charaucerを景勝して定義されたWizardクラス
 public class Wizard extends Character{
 	int mp;
 	public void attack(Matango m) {

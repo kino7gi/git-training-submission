@@ -4,7 +4,7 @@ package ch11;
 /*newして欲しくないなど、伝えたいことがある際はこのようにして
  * コメントに残しておくと便利
  */
-public class Character {
+public abstract class Character {
 	String name;
 	int hp;
 	//逃げる
@@ -23,6 +23,4 @@ public class Character {
 	//戦う
 	//抽象メソッド
 	public abstract void attack(Matango m);
-	}
-
 }

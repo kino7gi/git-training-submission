@@ -6,7 +6,7 @@ public class Main {
 		Hero h = new Hero();
 		Matango m = new Matango();
 		h.attack(m);
-
+		
 	}
 
 }
