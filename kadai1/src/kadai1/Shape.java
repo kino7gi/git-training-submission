@@ -10,16 +10,13 @@ public abstract class Shape interface Figure{
 	/**
 	 * ・図形描画機能の定義
 	 */
-	public abstract draw() {
-		
+	public abstract void draw(){
 	}
 	/**
 	 *・長さ測定機能の定義
 	 */
 	
 	public abstract  double getPerimeter() {
-		return
-		
 	}
 
 }
