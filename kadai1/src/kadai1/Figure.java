@@ -1,17 +1,16 @@
 package kadai1;
-
 /*
  * ・図形描画機能の定義 ・長さ測定機能の定義
  */
-public interface Figure {
+public interface Figure {//図形が必ず持つべき機能を定義
 	/**
 	 * 図形描画機能の定義
 	 */
-	public void draw();
+	void draw();
 
 	/**
 	 * 長さ測定機能の定義
-	 * @return 長さ
+	 * 
 	 */
-	public double getPerimeter();
+	double getPerimeter();
 }

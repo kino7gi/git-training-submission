@@ -6,27 +6,25 @@ package kadai1;
 public class Point {
 	private int x;//・x座標を表すprivateフィールド
 	private int y;//・y座標を表すprivateフィールド
-
 	/**
 	 *・引数なしコンストラクタの定義
 	　x座標、y座標ともに0で初期化する。
 	 */
-	public void Point() {
-		x = 0;
-		y = 0;
+	public Point() {
+		this.x = 0;
+		this.y = 0;
 	}
 	/**
 	 * ・x座標、y座標を受け取りその値で初期化するコンストラクタの定義
 	　第1引数で渡された値をxフィールドに代入する。
 	　第2引数で渡された値をyフィールドに代入する。
 	 */
-	public void Point(int x, int y) {
-		this.x = 0;
-		this.y = 0;
+	public Point(int x, int y) {
+		this.x = x;
+		this.y = y;
 	}
 	/**
 	 * ・xフィールドの値を返すメソッド
-	 *  @return
 	 */
 	public int getX() {
 		return x;
