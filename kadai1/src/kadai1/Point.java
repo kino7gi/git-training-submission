@@ -3,7 +3,7 @@ package kadai1;
 /*
  * ・座標位置情報を表すクラス
  */
-public class Point {
+public class Point implements Figure {
 	private int x;//・x座標を表すprivateフィールド
 	private int y;//・y座標を表すprivateフィールド
 	/**
@@ -37,7 +37,7 @@ public class Point {
 	}
 	/**
 	 * ・yフィールドの値を返すメソッド
-	 * @return
+	 * 
 	 */
 	public int getY() {
 		return y;
@@ -47,6 +47,16 @@ public class Point {
 	 */
 	public void setY(int y) {
 		this.y = y;
+	}
+	@Override
+	public void draw() {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+	@Override
+	public double getPerimeter() {
+		// TODO 自動生成されたメソッド・スタブ
+		return 0;
 	}	
 
 

@@ -6,6 +6,7 @@ package kadai1;
  */
 public class Square extends Rectangle {
 
+	private String y;
 	/**
 	 * スーパークラスRectangleのコンストラクタを明示的に呼び出す。
 	引数は以下の通りとする。
@@ -14,19 +15,16 @@ public class Square extends Rectangle {
 	　第3引数...正方形の一辺の長さ
 	　第4引数...正方形の一辺の長さ
 	 */
-	public void Square(int x, int y, int width, int width1) {
-		this.x = x;
-		this.y = y;
-		this.width = width;
-		this.width1 = width1;
+	public Square(int x, int y, int width) {
+		super(x,y,width,width);
 	}
 	/**
 	 * 以下のようなメッセージを表示する。
 	出力例：
 	　"[正方形を描画] 点(0,0)を基準として幅・高さ200の正方形"
+	 * 
 	 */
-	public void draw() {
-		System.out.println("[正方形を描画] 点(0,0)を基準として幅・高さ200の正方形");
+	public void draw(){
+		System.out.println("[正方形を描画] 点("+ p.getX() + "," + p.getY() + ")を基準として幅・高さ" + width + "の正方形");
 	}
-
 }

@@ -28,7 +28,7 @@ public class Line implements Figure {
 	 * 以下のようなメッセージを表示する。なお、始点をp1、終点をp2とする。
 	 */
 	public void draw(){
-		System.out.println("[線を描画]始点" + (p1.getX() + p1.getY()) + "から終点" + (p2.getX() + p2.getY() + "まで");
+		System.out.println("[線を描画]始点" + (p1.getX() + p1.getY()) + "から終点" + (p2.getX() + p2.getY())+ "まで");
 		
 	}
 	/**

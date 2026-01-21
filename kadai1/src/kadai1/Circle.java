@@ -32,7 +32,7 @@ public class Circle extends Shape {
 	　"[円を描画] 中心点(100,100)から半径20"
 	 */
 	public void draw() {
-		System.out.println("[円を描画] 中心点" + center.getX() + "," + center.getY() + "から半径" + radius);
+		System.out.println("[円を描画] 中心点(" + center.getX() + "," + center.getY() + ")から半径" + radius);
 	}
 	/**
 	 * 半径を使い、以下の計算式で算出した結果を返す
