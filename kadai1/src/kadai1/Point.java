@@ -1,9 +1,8 @@
 package kadai1;
-
 /*
  * ・座標位置情報を表すクラス
  */
-public class Point implements Figure {
+public class Point {
 	private int x;//・x座標を表すprivateフィールド
 	private int y;//・y座標を表すprivateフィールド
 	/**
@@ -48,16 +47,5 @@ public class Point implements Figure {
 	public void setY(int y) {
 		this.y = y;
 	}
-	@Override
-	public void draw() {
-		// TODO 自動生成されたメソッド・スタブ
-		
-	}
-	@Override
-	public double getPerimeter() {
-		// TODO 自動生成されたメソッド・スタブ
-		return 0;
-	}	
-
 
 }

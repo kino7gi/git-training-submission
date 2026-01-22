@@ -5,8 +5,6 @@ package kadai1;
 　　　　・正方形描画メソッド
  */
 public class Square extends Rectangle {
-
-	private String y;
 	/**
 	 * スーパークラスRectangleのコンストラクタを明示的に呼び出す。
 	引数は以下の通りとする。

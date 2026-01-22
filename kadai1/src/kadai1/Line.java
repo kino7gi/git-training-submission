@@ -1,5 +1,4 @@
 package kadai1;
-
 /**
  * ・2つの座標データを指定することで、線を描画するクラス
 　　　　・線描画メソッド
@@ -13,22 +12,22 @@ public class Line implements Figure {
 		　p1(x,y座標)、p2(x,y座標)全て0で初期化する。
 		 */
 		public Line() {
-			p1 = new Point();
-			p2 = new Point();
+			this.p1 = new Point(0,0);
+			this.p2 = new Point(0,0);
 		}
 		/*
 		 * 引数で受け取ったデータを用いて、2つのPointオブジェクトを生成。
 		p1フィールドとp2フィールドにそれぞれを代入する。
 		 */
 	public Line(int x1, int x2, int y1, int y2) {
-		p1 = new Point(x1, y1);
-		p2 = new Point(x2, y2);
+		p1 = new Point (x1, y1);
+		p2 = new Point (x2, y2);
 	}
 	/**
 	 * 以下のようなメッセージを表示する。なお、始点をp1、終点をp2とする。
 	 */
 	public void draw(){
-		System.out.println("[線を描画]始点" + (p1.getX() + p1.getY()) + "から終点" + (p2.getX() + p2.getY())+ "まで");
+		System.out.println("[線を描画]始点(" + (p1.getX() + "," + p1.getY()) + ")から終点(" + (p2.getX() + "," + p2.getY())+ ")まで");
 		
 	}
 	/**

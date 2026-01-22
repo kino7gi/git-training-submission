@@ -13,7 +13,7 @@ public class Circle extends Shape {
 	　center(x,y座標)、半径全て0で初期化する
 	 */
 	public Circle() {
-		this.center = new Point();
+		this.center = new Point(0,0);
 		this.radius = 0;
 	}
 
