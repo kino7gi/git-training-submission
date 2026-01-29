@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.example.demo.dto.UserRequest;
 import com.example.demo.dto.UserSearchRequest;
 import com.example.demo.dto.UserUpdateRequest;
 import com.example.demo.entity.User;
@@ -51,6 +52,7 @@ public class UserController {
    */
   @GetMapping(value = "/user/add")
   public String displayAdd(Model model) {
+	  model.addAttribute("userRequest", new UserRequest());
     return "user/add";
   }
 
@@ -131,6 +133,30 @@ public class UserController {
       model.addAttribute("userinfo", user);
       return "user/search";
     }
+    /**
+     * ユーザー新規登録
+     * @param userRequest リクエストデータ
+     * @param result BindingResultl
+     * @param model Model
+     * @return ユーザー情報一覧画面
+     */
+     @RequestMapping(value = "/user/create", method = RequestMethod.POST)
+     public String create(@Validated @ModelAttribute UserRequest userRequest, BindingResult result, Model model) {
+         if (result.hasErrors()) {
+             List<String> errorList = new ArrayList<String>();
+             for (ObjectError error : result.getAllErrors()) {
+                 errorList.add(error.getDefaultMessage());
+             }
+
+             model.addAttribute("validationError", errorList);
+             return "user/add";
+         }
+
+         // ここでユーザー情報を登録する
+         // 登録処理は省略
+
+         return "user/add";
+     }
 
   
   
